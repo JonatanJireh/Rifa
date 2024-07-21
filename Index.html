@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Participantes</title>
+    <title>Registro de Nombres</title>
 </head>
 <body>
     <div class="container">
-        <h1>Registrar Participante</h1>
-        <form id="nameForm">
-            <input type="text" id="nameInput" placeholder="Ingrese un nombre" required>
-            <button type="submit">Registrar</button>
-        </form>
+        <img src="logo1.png" alt="Logo 1" class="logo logo-left">
+        <img src="logo2.png" alt="Logo 2" class="logo logo-right">
+        <h1>Participantes</h1>
+        <input type="file" id="fileInput" accept=".xlsx, .xls">
         <ul id="nameList"></ul>
-        <a href="random.html">Seleccionar un nombre al azar</a>
+        <a href="random.html">Seleccionar Ganador</a>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
