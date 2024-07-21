@@ -67,13 +67,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 let elapsed = 0;
 
                 const interval = setInterval(() => {
-                    const randomIndex = Math.floor(Math.random() * storedNames.length);
-                    randomNameDisplay.textContent = storedNames[randomIndex].name;
+                    const randomindex = Math.floor(Math.random() * storedNames.length);
+                    randomNameDisplay.textContent = storedNames[randomindex].name;
                     elapsed += intervalDuration;
                     if (elapsed >= animationDuration) {
                         clearInterval(interval);
-                        const selectedIndex = Math.floor(Math.random() * storedNames.length);
-                        const selectedEntry = storedNames.splice(selectedIndex, 1)[0];
+                        const selectedindex = Math.floor(Math.random() * storedNames.length);
+                        const selectedEntry = storedNames.splice(selectedindex, 1)[0];
                         congratsDisplay.textContent = '¡Felicidades!';
                         typeWriter(selectedEntry.name, randomNameDisplay, 1500, () => {
                             randomNameDisplay.classList.add('winner');
